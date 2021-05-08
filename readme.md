@@ -21,6 +21,8 @@ docker exec -it boilerplate_db psql -U postgres
 docker exec boilerplate_db pg_dump -U postgres -s postgres
 ```
 
+For more about the db, see the [db docs](./docs/db.md).
+
 
 # todo
 - docker-compose

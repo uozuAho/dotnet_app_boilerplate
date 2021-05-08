@@ -1,3 +1,4 @@
+using boilerplate.db.Models;
 using Marten;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -7,7 +8,14 @@ namespace boilerplate.db
     {
         public static void AddDatabase(this IServiceCollection services, string connectionString)
         {
-            services.AddMarten(connectionString);
+            services.AddSingleton<IDocumentStore>(_ => DocumentStore.For(_ =>
+            {
+                _.Connection(connectionString);
+
+                _.Schema.For<Animal>()
+                    .AddSubClass<Person>()
+                    .AddSubClass<Dog>();
+            }));
             AddRepositories(services);
         }
 
@@ -15,6 +23,7 @@ namespace boilerplate.db
         {
             services.AddScoped<PersonRepository>();
             services.AddScoped<DogRepository>();
+            services.AddScoped<AnimalRepository>();
         }
     }
 }
