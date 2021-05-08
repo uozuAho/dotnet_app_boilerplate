@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>boilerplate.db</AssemblyName>
+    <RootNamespace>boilerplate.db</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Setup" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Marten" Version="3.13.4" />
+  </ItemGroup>
+
+</Project>
