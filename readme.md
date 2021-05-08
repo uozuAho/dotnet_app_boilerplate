@@ -25,6 +25,7 @@ For more about the db, see the [db docs](./docs/db.md).
 
 
 # todo
+- starting with a fresh db, does inserting a dog also insert an animal?
 - docker-compose
 - pgweb
 - prometheus + grafana
