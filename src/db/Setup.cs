@@ -14,6 +14,7 @@ namespace boilerplate.db
         private static void AddRepositories(IServiceCollection services)
         {
             services.AddScoped<PersonRepository>();
+            services.AddScoped<DogRepository>();
         }
     }
 }
