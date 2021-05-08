@@ -1,6 +1,6 @@
 using System;
 
-namespace api
+namespace boilerplate.api
 {
     public class WeatherForecast
     {
