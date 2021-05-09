@@ -30,7 +30,7 @@ For more about the db, see the [db docs](./docs/db.md).
 
 
 # viewing traces in Jaeger
-Browse to http://localhost:16686/. For more details, see [tracing](./tracing.md)
+Browse to http://localhost:16686/. For more details, see [tracing](./docs/tracing.md)
 
 
 # todo
