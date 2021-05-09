@@ -10,8 +10,10 @@ http://localhost:16686/.
 
 - install libraries in API project:
 
-> dotnet add package Jaeger -v 0.3.6
-> dotnet add package OpenTracing.Contrib.NetCore -v 0.6.2
+```sh
+dotnet add package Jaeger -v 0.3.6
+dotnet add package OpenTracing.Contrib.NetCore -v 0.6.2
+```
 
 - note that the latest versions of these libraries didn't "just work" like the
   above versions did. I don't know why.
