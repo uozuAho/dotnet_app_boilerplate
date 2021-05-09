@@ -17,9 +17,9 @@ dotnet add package OpenTracing.Contrib.NetCore -v 0.6.2
 
 - note that the latest versions of these libraries didn't "just work" like the
   above versions did. I don't know why.
-- add tracing to the asp.net services. See [Tracing.cs](./src/api/Tracing.cs)
+- add tracing to the asp.net services. See [Tracing.cs](../src/api/Tracing.cs)
 - run `jaegertracing/all-in-one:latest` in docker. See the
-  [start Jaeger](./start_jaeger.sh) script
+  [start Jaeger](../start_jaeger.sh) script
 
 Run your app and make some requests. You should be able to view traces at
 http://localhost:16686/. The default configuration of the Jaeger dotnet library
