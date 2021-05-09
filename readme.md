@@ -14,7 +14,7 @@ An observable dotnet asp.net web API.
 ./start_jaeger.sh
 cd src/api
 dotnet run
-browse to http://localhost:5000/swagger
+browse to https://localhost:5001/swagger
 ```
 
 
