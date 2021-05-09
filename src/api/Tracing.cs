@@ -1,9 +1,5 @@
-using System;
 using Jaeger;
-using Jaeger.Reporters;
-using Jaeger.Samplers;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using OpenTracing;
 using OpenTracing.Util;
 
@@ -17,11 +13,7 @@ namespace boilerplate.api
 
             services.AddSingleton<ITracer>(_ =>
             {
-                var loggerFactory = _.GetRequiredService<ILoggerFactory>();
-                var tracer = new Tracer.Builder("boilerplate.api")
-                    // .WithLoggerFactory(loggerFactory)
-                    // .WithSampler(new ConstSampler(true))
-                    .Build();
+                var tracer = new Tracer.Builder("boilerplate.api").Build();
 
                 GlobalTracer.Register(tracer);
 
