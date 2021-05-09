@@ -2,7 +2,8 @@
 
 This app uses [Jaeger](https://www.jaegertracing.io/) for (distributed) tracing.
 
-To view traces, start the app (see ../readme.md), then browse to http://localhost:16686/.
+To view traces, start the app (see the [readme](../readme.md)), then browse to
+http://localhost:16686/.
 
 
 ## Setting up Jaeger in a new project
