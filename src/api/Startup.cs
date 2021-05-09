@@ -20,6 +20,7 @@ namespace boilerplate.api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDatabase(Configuration.GetConnectionString("Marten"));
+            services.AddTracing();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
